@@ -183,7 +183,7 @@ export default class MonitorScreen extends EventEmitter {
         };
 
         // Set iframe attributes — points to Raghv's local inner site
-        iframe.src = 'http://localhost:3000/';
+        iframe.src = 'https://raghv-bhatia-digital-cv-inner.vercel.app/';
         // Use port 3001 if running alongside another project
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('port')) {
