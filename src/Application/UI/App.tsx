@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import LoadingScreen from './components/LoadingScreen';
 import HelpPrompt from './components/HelpPrompt';
 import InterfaceUI from './components/InterfaceUI';
@@ -19,6 +20,7 @@ const App = () => {
         <div id="ui-app">
             {!loading && <HelpPrompt />}
             <LoadingScreen />
+            <SpeedInsights />
         </div>
     );
 };
